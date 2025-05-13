@@ -1,0 +1,6 @@
+@WebApiDock_HostAddress = http://localhost:5258
+
+GET {{WebApiDock_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
