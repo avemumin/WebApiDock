@@ -18,9 +18,9 @@ builder.Services.AddScoped<UserSeeder>();
 builder.Services.AddScoped<IUserService, UserService>();
 var app = builder.Build();
 
-//var scope = app.Services.CreateScope();
-//var seeder = scope.ServiceProvider.GetRequiredService<UserSeeder>();
-//seeder.UserSeed();
+var scope = app.Services.CreateScope();
+var seeder = scope.ServiceProvider.GetRequiredService<UserSeeder>();
+seeder.UserSeed();
 
 // Configure the HTTP request pipeline.
 
